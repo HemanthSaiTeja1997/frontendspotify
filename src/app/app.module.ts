@@ -20,6 +20,9 @@ import { SpotifyuserregistractionComponent } from './spotifyuserregistraction/sp
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LogincompComponent } from './logincomp/logincomp.component';
+import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 
 @NgModule({
@@ -29,6 +32,9 @@ import { LogincompComponent } from './logincomp/logincomp.component';
     ContentComponent,
     SpotifyuserregistractionComponent,
     LogincompComponent,
+    HomeComponent,
+    AdminComponent,
+    AdminloginComponent,
     
   ],
   imports: [
