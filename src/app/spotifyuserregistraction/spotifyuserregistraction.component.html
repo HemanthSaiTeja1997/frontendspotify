@@ -1,4 +1,4 @@
-
+<!-- 
 <h2> Spotify  Registraction Form 
     <form (submit)="fun1()">
         <div>User Id <input type="text" name="uid" [(ngModel)]="obj.uid"></div>
@@ -12,7 +12,9 @@
         <div> <input type="submit" value="submit"> </div>
     
     </form>
-</h2>
+</h2> -->
+
+
 
 <!-- <h3>
     <pre>
@@ -40,9 +42,8 @@
 
 
 
-
-<!-- <form [formGroup]="sportifyform" (ngSubmit)="fun1()">
-    <div>Enter UserId <input type="text" formControlName="uid" [(ngModel)]="obj.uid"></div><br>
+ <form [formGroup]="sportifyform" (ngSubmit)="fun1()">
+    <div>Enter UserId <input type="text" formControlName="uid" ></div><br>
     <div *ngIf="sportifyform.controls['uid'].hasError('required')">
         <div style="color: red;">*User Id is Required</div>
     </div>
@@ -54,7 +55,7 @@
         <div style="color: red;">*Can't Exceed 5 charaters </div>
     </div>
 
-    <div>Enter UserName <input type="text" formControlName="uname" [(ngModel)]="obj.uname"></div><br>
+    <div>Enter UserName <input type="text" formControlName="uname" ></div><br>
     <div *ngIf="sportifyform.controls['uname'].hasError('required')">
         <div style="color: red;">*Name is Required</div>
     </div>
@@ -67,7 +68,7 @@
         <div style="color: red;">*Can't Exceed 15 charaters </div>
     </div>
 
-        <div>Enter MobileNumber <input type="text" formControlName="mnumber" [(ngModel)]="obj.mnumber"></div><br>
+        <div>Enter MobileNumber <input type="text" formControlName="mnumber" ></div><br>
         <div *ngIf="sportifyform.controls['mnumber'].hasError('required')">
             <div style="color: red;">*MobileNumber is Required</div>
         </div>
@@ -80,7 +81,7 @@
         </div>
 
     
-    <div>Enter Email <input type="text" formControlName="email" [(ngModel)]="obj.email"></div><br>
+    <div>Enter Email <input type="text" formControlName="email" ></div><br>
 
     <div *ngIf="sportifyform.controls['email'].hasError('required')">
         <div style="color: red;">*Email is Required</div>
@@ -93,7 +94,7 @@
            <div style="color: red;">*Can't Exceed 15 charaters </div>
    </div>
    
-   <div>Enter Password <input type="text" formControlName="password" [(ngModel)]="obj.password"><br><br></div>
+   <div>Enter Password <input type="text" formControlName="password" ><br><br></div>
    <div *ngIf="sportifyform.controls['password'].hasError('required')">
        <div style="color: red;">*password is Required</div>
    </div>
@@ -104,7 +105,7 @@
        <div style="color: red;">*Can't Exceed 15 charaters </div>
    </div>
 
-   <div>Enter PlayList <input type="text" formControlName="pname" [(ngModel)]="obj.pname"><br><br></div>
+   <div>Enter PlayList <input type="text" formControlName="pname" ><br><br></div>
    <div *ngIf="sportifyform.controls['pname'].hasError('required')">
        <div style="color: red;">*playList Name is Required</div>
    </div>
@@ -115,7 +116,7 @@
        <div style="color: red;">*Can't Exceed 10 charaters </div>
    </div>
   
-   <div>Enter songId <input type="text" formControlName="sid" [(ngModel)]="obj.sid"><br><br></div>
+   <div>Enter songId <input type="text" formControlName="sid" ><br><br></div>
    <div *ngIf="sportifyform.controls['sid'].hasError('required')">
        <div style="color: red;">*songid is Required</div>
    </div>
@@ -126,7 +127,7 @@
        <div style="color: red;">*Can't Exceed 3 charaters </div>
    </div>
 
-   <div>Enter SongUrl <input type="text" formControlName="songurl" [(ngModel)]="obj.songurl"><br><br></div>
+   <div>Enter SongUrl <input type="text" formControlName="songurl" ><br><br></div>
    <div *ngIf="sportifyform.controls['songurl'].hasError('required')">
        <div style="color: red;">*SongUrl is Required</div>
    </div>
@@ -156,4 +157,4 @@
 
  
 
-</form> -->
+</form> 

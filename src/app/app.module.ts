@@ -19,6 +19,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { SpotifyuserregistractionComponent } from './spotifyuserregistraction/spotifyuserregistraction.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LogincompComponent } from './logincomp/logincomp.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     ContentComponent,
     SpotifyuserregistractionComponent,
+    LogincompComponent,
     
   ],
   imports: [

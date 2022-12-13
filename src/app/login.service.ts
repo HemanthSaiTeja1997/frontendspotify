@@ -9,11 +9,15 @@ import { SpotifyUser } from './spotifyuserregistraction/domain/SpotifyUser';
 export class LoginService {
 
   constructor(private httpclient:HttpClient) { }
-  storeData(data1:SpotifyUser){
+  storeData(data1:any){
     return this.httpclient.post("http://localhost:9005/api/v1/saveSpotifyUser",data1);
   }
 
   fetchData():Observable<Array<SpotifyUser>>{
     return this.httpclient.get<Array<SpotifyUser>>("http://localhost:9005/api/v1/fetchAllSpotifyUsers")
+  }
+
+  loginUser(data2:SpotifyUser):Observable<SpotifyUser>{
+    return this.httpclient.post<SpotifyUser>("http://localhost:9005/api/v2/login",data2)
   }
 }

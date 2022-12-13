@@ -1,12 +1,12 @@
 export class SpotifyUser{
-    uid?:number
-    uname?:string
-    mnumber?:number
-    email?:string
-    password?:string
-    pname?:string
-    sid?:number
-    songurl?:string
+    uid:number
+    uname:string
+    mnumber:number
+    email:string
+    password:string
+    pname:string
+    sid:number
+    songurl:string
     
     constructor(){
         this.uid=0;
