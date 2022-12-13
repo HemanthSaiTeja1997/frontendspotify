@@ -15,15 +15,19 @@ import { ContentComponent } from './content/content.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import {MatSelectModule} from '@angular/material/select';
 import { SpotifyuserregistractionComponent } from './spotifyuserregistraction/spotifyuserregistraction.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ContentComponent,
-    SpotifyuserregistractionComponent
+    SpotifyuserregistractionComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -38,8 +42,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
+    MatSelectModule ,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+    
+  
+
   ],
   providers: [],
   bootstrap: [AppComponent]
