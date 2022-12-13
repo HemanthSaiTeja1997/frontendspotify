@@ -13,7 +13,7 @@ export class LogincompComponent implements OnInit {
   pro(){
     this.loginservice.loginUser(this.User).subscribe(
       {next(x){alert("LOGIN SUCCESSFUL")},
-      error(){alert("ERROR")},
+      error(x){alert("ERROR")},
       complete(){alert("COMPLETED")}})
   }
   ngOnInit(): void {}
