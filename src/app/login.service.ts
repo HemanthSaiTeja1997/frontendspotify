@@ -8,6 +8,15 @@ import { SpotifyUser } from './spotifyuserregistraction/domain/SpotifyUser';
 })
 export class LoginService {
   isLoginSuccess:boolean=false
+  isLogin(details:any){
+    if(details!=null){
+      this.isLoginSuccess=true;
+      alert("Login Successfull");
+    }else{
+      alert("Enter valid Credentials")
+    }
+  }
+
   constructor(private httpclient:HttpClient) { }
   storeData(data1:any){
     return this.httpclient.post("http://localhost:9005/api/v1/saveSpotifyUser",data1);
