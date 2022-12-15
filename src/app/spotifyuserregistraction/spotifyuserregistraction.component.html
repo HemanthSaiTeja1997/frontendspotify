@@ -67,6 +67,9 @@
     <div *ngIf="sportifyform.controls['uname'].hasError('maxlength')">
         <div style="color: red;">*Can't Exceed 15 charaters </div>
     </div>
+    <div *ngIf="sportifyform.controls['uname'].hasError('pattern')">
+        <div style="color: red;">*First letter start from [A-z] /Remaning [a-z]</div>
+    </div>
 
         <div>Enter MobileNumber <input type="text" formControlName="mnumber" ></div><br>
         <div *ngIf="sportifyform.controls['mnumber'].hasError('required')">
@@ -78,6 +81,9 @@
         </div>
         <div *ngIf="sportifyform.controls['mnumber'].hasError('maxlength')">
             <div style="color: red;">*Can't Exceed 12 charaters </div>
+        </div>
+        <div *ngIf="sportifyform.controls['mnumber'].hasError('pattern')">
+            <div style="color: red;">*Start with 7/8/9</div>
         </div>
 
     
@@ -91,9 +97,12 @@
         <div style="color: red;">*Atleast 10 charateres Required</div>
     </div>
     <div *ngIf="sportifyform.controls['email'].hasError('maxlength')">
-           <div style="color: red;">*Can't Exceed 15 charaters </div>
+           <div style="color: red;">*Can't Exceed 25 charaters </div>
    </div>
-   
+   <div *ngIf="sportifyform.controls['email'].hasError('pattern')">
+    <div style="color: red;">*Start with [Aa-Zz]/+/. + @gmail.com </div>
+</div>
+
    <div>Enter Password <input type="text" formControlName="password" ><br><br></div>
    <div *ngIf="sportifyform.controls['password'].hasError('required')">
        <div style="color: red;">*password is Required</div>
@@ -102,8 +111,11 @@
        <div style="color: red;">*Atleast 6 charateres Required</div>
    </div>
    <div *ngIf="sportifyform.controls['password'].hasError('maxlength')">
-       <div style="color: red;">*Can't Exceed 15 charaters </div>
+       <div style="color: red;">*Can't Exceed 10 charaters </div>
    </div>
+   <div *ngIf="sportifyform.controls['password'].hasError('pattern')">
+    <div style="color: red;">*Start with and should have atleast one from each [Aa-Zz]/[0-9]/[#?!@$%^&*-]</div>
+</div>
 
    <div>Enter PlayList <input type="text" formControlName="pname" ><br><br></div>
    <div *ngIf="sportifyform.controls['pname'].hasError('required')">

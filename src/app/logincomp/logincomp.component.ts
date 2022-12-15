@@ -8,15 +8,17 @@ import { SpotifyUser } from '../spotifyuserregistraction/domain/SpotifyUser';
   styleUrls: ['./logincomp.component.css']
 })
 export class LogincompComponent implements OnInit {
-  User =new SpotifyUser();
+  User = new SpotifyUser()
   constructor(private loginservice:LoginService){}
-  pro(){
-    this.loginservice.loginUser(this.User).subscribe(data=>{
-      this.User=data;
-      console.log(this.User);
-      this.loginservice.isLogin(this.User);
-    })
+  pro()
+  {
+    this.loginservice.loginUser(this.User).subscribe({next(x){alert("Data Added")},
+    error(){alert("error")},
+    complete(){alert("Completed")}})
+      
+      
   }
+  
   ngOnInit(): void {}
 
 }

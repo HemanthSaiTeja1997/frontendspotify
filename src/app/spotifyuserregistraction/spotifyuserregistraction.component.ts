@@ -12,10 +12,10 @@ export class SpotifyuserregistractionComponent implements OnInit  {
   
   sportifyform = new FormGroup({
   uid: new FormControl('',[Validators.required,Validators.minLength(1),Validators.maxLength(5)]),
-  uname: new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(15)]),
-  mnumber: new FormControl('',[Validators.required,Validators.minLength(10),Validators.maxLength(12)]),
-  email: new FormControl('',[Validators.required,Validators.minLength(10),Validators.maxLength(15)]),
-  password: new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(10)]),
+  uname: new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(15),Validators.pattern("[A-Z]{1}[a-z]{6,}")]),
+  mnumber: new FormControl('',[Validators.required,Validators.minLength(10),Validators.maxLength(12),Validators.pattern("[7-9]{1}[0-9]{9,}")]),
+  email: new FormControl('',[Validators.required,Validators.minLength(15),Validators.maxLength(25),Validators.pattern("([a-zA-Z0-9]+)([\.{1}])?([a-zA-Z0-9]+)\@gmail([\.])com")]),
+  password: new FormControl('',[Validators.required,Validators.minLength(8),Validators.maxLength(10),Validators.pattern("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")]),
     pname: new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(10)]),
       sid: new FormControl('',[Validators.required,Validators.minLength(2),Validators.maxLength(3)]),
       songurl:new FormControl('',[Validators.required,Validators.minLength(20),Validators.maxLength(100)])

@@ -8,6 +8,7 @@ import { SpotifyUser } from './spotifyuserregistraction/domain/SpotifyUser';
 })
 export class LoginService {
   isLoginSuccess:boolean=false
+  
   isLogin(details:any){
     if(details!=null){
       this.isLoginSuccess=true;
@@ -26,7 +27,7 @@ export class LoginService {
     return this.httpclient.get<Array<SpotifyUser>>("http://localhost:9005/api/v1/fetchAllSpotifyUsers")
   }
 
-  loginUser(data2:SpotifyUser):Observable<SpotifyUser>{
+  loginUser(data2:any):Observable<SpotifyUser>{
     return this.httpclient.post<SpotifyUser>("http://localhost:9005/api/v2/login",data2)
   }
 }
