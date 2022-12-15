@@ -10,16 +10,16 @@ import { SpotifyUser } from '../spotifyuserregistraction/domain/SpotifyUser';
 })
 export class LogincompComponent implements OnInit {
   User = new SpotifyUser()
+  
   constructor(private loginservice:LoginService,private route:Router){}
   pro()
   {
     this.loginservice.loginUser(this.User).subscribe({next(x){alert("Login Successful")},
     error(){alert("error")},
     complete(){alert("Completed")}})
-    this.route.navigateByUrl("listofsongs")
-      
-      
   }
+
+
   
   ngOnInit(): void {}
 

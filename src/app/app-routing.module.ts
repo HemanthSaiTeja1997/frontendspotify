@@ -37,7 +37,7 @@ canActivate:[AdminGuard]
 },
 
 {path:"**",
-component:HomeComponent}
+component:WelcomepageComponent}
 
 ];
 
