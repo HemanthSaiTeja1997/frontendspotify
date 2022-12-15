@@ -11,10 +11,6 @@ import { WelcomepageComponent } from './welcomepage/welcomepage.component';
 
 const routes: Routes = [
 
-  {
-    path:"",
-    component:WelcomepageComponent
-  },
   {path:"spotifyregister",
    component:SpotifyuserregistractionComponent
 },

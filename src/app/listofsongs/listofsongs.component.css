@@ -8,4 +8,10 @@
     float: right;
   }
   
- 
+  .example {
+    display: table-cell;
+    max-width: 600px;
+    display: flex;
+   margin-left: 550px;
+  }
+  
