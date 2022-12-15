@@ -7,8 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { ListofsongsComponent } from './listofsongs/listofsongs.component';
 import { LogincompComponent } from './logincomp/logincomp.component';
 import { SpotifyuserregistractionComponent } from './spotifyuserregistraction/spotifyuserregistraction.component';
+import { WelcomepageComponent } from './welcomepage/welcomepage.component';
 
 const routes: Routes = [
+
+  {
+    path:"",
+    component:WelcomepageComponent
+  },
   {path:"spotifyregister",
    component:SpotifyuserregistractionComponent
 },
@@ -16,6 +22,11 @@ const routes: Routes = [
   path:"Userlogin",
   component:LogincompComponent
 },
+{
+  path:"welcome",
+  component:WelcomepageComponent
+},
+
 {
   path:"listofsongs",
   component:ListofsongsComponent

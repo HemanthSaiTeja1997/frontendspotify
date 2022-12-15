@@ -23,6 +23,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { ListofsongsComponent } from './listofsongs/listofsongs.component';
+import { WelcomepageComponent } from './welcomepage/welcomepage.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { ListofsongsComponent } from './listofsongs/listofsongs.component';
     AdminComponent,
     AdminloginComponent,
     ListofsongsComponent,
+    WelcomepageComponent,
     
   ],
   imports: [
