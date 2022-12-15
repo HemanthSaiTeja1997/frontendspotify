@@ -4,6 +4,7 @@ import { AdminGuard } from './admin.guard';
 import { AdminComponent } from './admin/admin.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { HomeComponent } from './home/home.component';
+import { ListofsongsComponent } from './listofsongs/listofsongs.component';
 import { LogincompComponent } from './logincomp/logincomp.component';
 import { SpotifyuserregistractionComponent } from './spotifyuserregistraction/spotifyuserregistraction.component';
 
@@ -14,6 +15,10 @@ const routes: Routes = [
 {
   path:"Userlogin",
   component:LogincompComponent
+},
+{
+  path:"listofsongs",
+  component:ListofsongsComponent
 },
 {path:"home",
 component:HomeComponent},

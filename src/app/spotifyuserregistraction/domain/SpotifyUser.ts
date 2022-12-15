@@ -8,14 +8,14 @@ export class SpotifyUser{
     sid:number
     songurl:string
     
-    constructor(){
-        this.uid=0;
-        this.uname="";
-        this.mnumber=0;
-        this.email="";
-        this.password="";
-        this.pname="";
-        this.sid=0;
-        this.songurl=""
-    }
+     constructor(){
+         this.uid=0;
+         this.uname="";
+         this.mnumber=0;
+         this.email="";
+         this.password="";
+         this.pname="";
+         this.sid=0;
+         this.songurl=""
+     }
 }

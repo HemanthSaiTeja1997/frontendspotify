@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,6 +22,7 @@ import { LogincompComponent } from './logincomp/logincomp.component';
 import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { ListofsongsComponent } from './listofsongs/listofsongs.component';
 
 
 @NgModule({
@@ -35,6 +35,7 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
     HomeComponent,
     AdminComponent,
     AdminloginComponent,
+    ListofsongsComponent,
     
   ],
   imports: [

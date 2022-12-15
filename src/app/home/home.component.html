@@ -1,4 +1,4 @@
-<h1>Welcome To Spotify</h1>
+<!-- <h1>Welcome To Spotify</h1>
 <div *ngFor="let c of SpotifyData">
     <h3> <pre>
     PlayListName : {{c.pname}}
@@ -18,4 +18,16 @@
         }
         play.addEventListener("click",playMusic);
     </script>
-</div>
+</div> -->
+
+<div class="main-div">
+    <mat-card class="card" *ngFor="let data of SpotifyData">
+        <mat-card-header>
+            <mat-card-title class="title">{{data.sid}}) {{data.pname}}</mat-card-title>
+            <mat-card-subtitle class="sub1">{{data.sid}}</mat-card-subtitle> -->
+            <mat-card-subtitle class="sub1">{{data.songurl}}</mat-card-subtitle>
+        </mat-card-header>
+        <button mat-button><mat-icon>play_arrow</mat-icon></button>
+        <button mat-button><mat-icon>playlist_add</mat-icon></button>
+    </mat-card>
+    </div>  
