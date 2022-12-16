@@ -41,10 +41,27 @@
             <mat-card-subtitle class="sub1">Thirdsong:{{data.thirdsong}}</mat-card-subtitle>
             <mat-card-subtitle class="sub1">Fourthsong:{{data.fourthsong}}</mat-card-subtitle>
             <mat-card-subtitle class="sub1">Fivthsongsong:{{data.fivthsong}}</mat-card-subtitle>
-         
-
         </mat-card-header>
+
         <button mat-button><mat-icon>border_color</mat-icon></button>
         <button mat-button><mat-icon>delete_foreve</mat-icon></button>
     </mat-card>
+         <div *ngFor="let data of loggedInUser">
+               <audio controls>
+                <source src="{{data.firstsong}}"  type="audio/mpeg"  >
+              </audio>
+              <audio controls>
+                <source src="{{data.secondsong}}"  type="audio/mpeg"  >
+              </audio>
+              <audio controls>
+                <source src="{{data.thirdsong}}"  type="audio/mpeg"  >
+              </audio>
+              <audio controls>
+                <source src="{{data.fourthsong}}"  type="audio/mpeg"  >
+              </audio>
+              <audio controls>
+                <source src="{{data.fivthsong}}"  type="audio/mpeg"  >
+              </audio>
+
+            </div>
     </div>  
