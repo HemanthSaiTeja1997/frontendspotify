@@ -8,7 +8,7 @@ export class SpotifyUser{
     firstsong:string
     secondsong:string
     thirdsong:string
-    fourthosong:string
+    fourthsong:string
     fivthsong:string
     
      constructor(){
@@ -21,7 +21,7 @@ export class SpotifyUser{
          this.firstsong  ="";
          this.secondsong="";
          this.thirdsong="";
-         this.fourthosong="";
+         this.fourthsong="";
          this.fivthsong="";
      }
 }

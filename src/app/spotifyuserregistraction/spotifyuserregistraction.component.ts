@@ -20,7 +20,7 @@ export class SpotifyuserregistractionComponent implements OnInit  {
     firstsong: new FormControl(''),
     secondsong: new FormControl(''),
     thirdsong: new FormControl(''),
-    fourthosong: new FormControl(''),
+    fourthsong: new FormControl(''),
     fivthsong: new FormControl('')
       
     });
@@ -33,7 +33,7 @@ export class SpotifyuserregistractionComponent implements OnInit  {
     get firstsong(){return this.sportifyform.get('firstsong');}
     get secondsong(){return this.sportifyform.get('secondsong');}
     get thirdsong(){return this.sportifyform.get('thirdsong');}
-    get fourthosong(){return this.sportifyform.get('fourthosong');}
+    get fourthsong(){return this.sportifyform.get('fourthsong');}
     get fivthsong(){return this.sportifyform.get('fivthsong');}
 
 
