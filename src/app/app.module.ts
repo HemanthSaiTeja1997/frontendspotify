@@ -24,6 +24,7 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { ListofsongsComponent } from './listofsongs/listofsongs.component';
 import { WelcomepageComponent } from './welcomepage/welcomepage.component';
+import { PlayComponent } from './play/play.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { WelcomepageComponent } from './welcomepage/welcomepage.component';
     AdminloginComponent,
     ListofsongsComponent,
     WelcomepageComponent,
+    PlayComponent,
     
   ],
   imports: [

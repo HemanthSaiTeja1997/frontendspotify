@@ -3,11 +3,15 @@
     <button mat-raised-button color="accent" routerLink="/welcome">LOGOUT</button>
   </div>
 
-<mat-selection-list #shoes>
-    <mat-list-option *ngFor="let songs of Listofsongs">
-      {{songs}}
+  <div >
+<mat-selection-list >
+    <mat-list-option class="main-div" *ngFor="let songs of Listofsongs">
+      <audio controls>
+        <source src="{{songs}}" type="audio/mpeg">
+      </audio>
     </mat-list-option>
   </mat-selection-list>
+</div>
 
   <div class="example">
     
