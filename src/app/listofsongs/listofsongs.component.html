@@ -6,9 +6,11 @@
   <div >
 <mat-selection-list >
     <mat-list-option class="main-div" *ngFor="let songs of Listofsongs">
+     
       <audio controls>
-        <source src="{{songs}}" type="audio/mpeg">
+        <source src="{{songs.url}}"  type="audio/mpeg"  >
       </audio>
+    {{songs.name}}
     </mat-list-option>
   </mat-selection-list>
 </div>
@@ -17,4 +19,4 @@
     
     <button type="button" (click)="log()" mat-raised-button color="accent" >Add To Playlist</button>
   </div>
-    
+   
