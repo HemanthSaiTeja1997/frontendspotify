@@ -5,8 +5,11 @@ export class SpotifyUser{
     email:string
     password:string
     pname:string
-    sid:number
-    songurl:string
+    firstsong:string
+    secondsong:string
+    thirdsong:string
+    fourthosong:string
+    fivthsong:string
     
      constructor(){
          this.uid=0;
@@ -15,7 +18,10 @@ export class SpotifyUser{
          this.email="";
          this.password="";
          this.pname="";
-         this.sid=0;
-         this.songurl=""
+         this.firstsong  ="";
+         this.secondsong="";
+         this.thirdsong="";
+         this.fourthosong="";
+         this.fivthsong="";
      }
 }

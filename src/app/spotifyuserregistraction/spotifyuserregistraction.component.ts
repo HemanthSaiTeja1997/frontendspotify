@@ -17,8 +17,12 @@ export class SpotifyuserregistractionComponent implements OnInit  {
   email: new FormControl('',[Validators.required,Validators.minLength(15),Validators.maxLength(25),Validators.pattern("([a-zA-Z0-9]+)([\.{1}])?([a-zA-Z0-9]+)\@gmail([\.])com")]),
   password: new FormControl('',[Validators.required,Validators.minLength(8),Validators.maxLength(10),Validators.pattern("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$")]),
     pname: new FormControl('',[Validators.required,Validators.minLength(6),Validators.maxLength(10)]),
-      sid: new FormControl('',[Validators.required,Validators.minLength(2),Validators.maxLength(3)]),
-      songurl:new FormControl('',[Validators.required,Validators.minLength(20),Validators.maxLength(100)])
+    firstsong: new FormControl(''),
+    secondsong: new FormControl(''),
+    thirdsong: new FormControl(''),
+    fourthosong: new FormControl(''),
+    fivthsong: new FormControl('')
+      
     });
     get uid(){return this.sportifyform.get('uid');}
     get uname(){return this.sportifyform.get('uname');}
@@ -26,8 +30,11 @@ export class SpotifyuserregistractionComponent implements OnInit  {
     get email(){return this.sportifyform.get('email');}
     get password(){return this.sportifyform.get('password');}
     get pname(){return this.sportifyform.get('pname');}
-    get sid(){return this.sportifyform.get('sid');}
-    get songurl(){return this.sportifyform.get('songurl');}
+    get firstsong(){return this.sportifyform.get('firstsong');}
+    get secondsong(){return this.sportifyform.get('secondsong');}
+    get thirdsong(){return this.sportifyform.get('thirdsong');}
+    get fourthosong(){return this.sportifyform.get('fourthosong');}
+    get fivthsong(){return this.sportifyform.get('fivthsong');}
 
 
 
