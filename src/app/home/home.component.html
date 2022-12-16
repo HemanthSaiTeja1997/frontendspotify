@@ -24,8 +24,8 @@
     <mat-card class="card" *ngFor="let data of SpotifyData">
         <mat-card-header>
             <mat-card-title class="title"> PlayListName : {{data.pname}} </mat-card-title>
-            <mat-card-subtitle class="sub1">SongId : {{data.sid}}</mat-card-subtitle> 
-            <mat-card-subtitle class="sub1">SongUrl : {{data.songurl}}</mat-card-subtitle>
+             <mat-card-subtitle class="sub1">SongId : {{data.firstsong}}</mat-card-subtitle> 
+            <mat-card-subtitle class="sub1">SongUrl : {{data.secondsong}}</mat-card-subtitle> 
         </mat-card-header>
         <button mat-button><mat-icon>play_arrow</mat-icon></button>
         <button mat-button><mat-icon>playlist_add</mat-icon></button>
