@@ -30,4 +30,8 @@ export class LoginService {
   loginUser(data2:any):Observable<SpotifyUser>{
     return this.httpclient.post<SpotifyUser>("http://localhost:9005/api/v2/login",data2)
   }
+  
+  fetch(email?:string,password?:string):Observable<Array<SpotifyUser>>{
+    return this.httpclient.get<Array<SpotifyUser>>("http://localhost:9005/api/v1/getbtemail"+"/"+email+"/"+password);
+  }
 }
